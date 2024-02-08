@@ -7,8 +7,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
-import za.co.transcend.dial365.posts.activities.PostActivity;
 
 public class MainActivity extends AppCompatActivity {
     Button viewPeopleButton;
@@ -23,8 +23,7 @@ public class MainActivity extends AppCompatActivity {
         viewPeopleButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, PostActivity.class);
-                startActivity(intent);
+                Toast.makeText(MainActivity.this, "Clicked", Toast.LENGTH_SHORT).show();
             }
         });
 
